@@ -1,0 +1,26 @@
+#!/bin/bash
+#rnunn@redhat.com
+#assumes run in relative dir to images
+
+#variables
+NEW_IMAGE="./rhel-9.4-x86_64_summit-test.iso"
+KICKSTART="./ks.cfg"
+BOOT_IMAGE="./rhel-9.4-x86_64-boot.iso"
+COPY_TARGET="rnunn@192.168.1.247:/home/rnunn/RHEL_INSTALL/"
+
+#clear out old image
+echo "removing old image and creating a new one $IMAGE"
+rm -f ./$NEW_IMAGE
+
+#inject new ks.cfg using mkkiso if not present install lorax-tools rpm
+mkksiso --ks $KICKSTART $BOOT_IMAGE $NEW_IMAGE || exit 1
+
+#copy to target machine to bind to ISO of VM to install
+scp $NEW_IMAGE $COPY_TARGET || exit 1
+
+#if we got here without breaking out we assume success is achieved yay
+echo "ALL DONE NOW BIND ISO TO VM ON HOST MACHINE AND BOOT VM"
+
+
+
+

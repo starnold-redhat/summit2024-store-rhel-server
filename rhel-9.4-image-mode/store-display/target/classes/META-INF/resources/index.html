@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="pf-v5-theme-dark">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quarkus Chat!</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.2.1/css/patternfly.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.2.1/css/patternfly-additions.min.css">
+
+    <style>
+        
+        #chat {
+            color: white;
+            font-size: 60px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body bgcolor="black">
+   
+    <div class="container" id="mainpage">
+      <br/>
+     
+      <div class="row">
+          <p></p><p></p>
+          <text id="chat">grab a t-shirt, and hold it up in front of the camera</text>
+      </div>
+      
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/js/patternfly.min.js"></script>
+
+    <script type="text/javascript">
+      var connected = false;
+      var socket;
+
+
+      $( document ).ready(function() {
+          connect();
+      });
+
+      var connect = function() {
+          if (! connected) {
+              socket = new WebSocket("ws://" + location.host + "/chat/display");
+              socket.onopen = function() {
+                  connected = true;
+                  console.log("Connected to the web socket");
+              };
+              socket.onmessage =function(m) {
+                  console.log("Got message: " + m.data);
+                  document.getElementById("chat").innerHTML = m.data;
+              };
+          }
+      };
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+[
+    {
+        "startTime" : "09:20",
+        "endTime" : "10:10",
+        "agendaItems" : [
+           {
+              "title" : "Red Hat Technology Keynote",
+              "tags" : [ "ansible", "openshift", "rhel", "ai" ],
+              "room" : "Theatre"
+           }
+        ]
+    },
+    {
+      "startTime" : "10:10",
+      "endTime" : "10:25",
+      "agendaItems" : [
+         {
+            "title" : "Implementing a Trusted Software Supply Chain within DNEG's OpenShift CI/CD Pipelines",
+            "tags" : [  "openshift"],
+            "room" : "Theatre"
+         }
+      ]
+    },
+    {
+        "startTime" : "11:25",
+        "endTime" : "11:55",
+        "agendaItems" : [
+           {
+              "title" : "Leveraging 3Scale with OpenShift to enhance API management in Film and TV",
+              "tags" : [ "openshift", "developer" ],
+              "room" : "room1"
+           },
+           {
+            "title" : "Enhancing Enterprise AI with RAG: Boost your AI's intelligence by seamlessly merging real-time data with LLMs",
+            "tags" : [ "ai" ],
+            "room" : "room2"
+           },
+           {
+            "title" : "The business impact of mission critical automation",
+            "tags" : [ "ansible" ],
+            "room" : "room3"
+           },
+           {
+            "title" : "Should you invest in platform teams? How OpenShift Cloud Services can save time cost and effort in your operations.",
+            "tags" : [ "openshift" ],
+            "room" : "room4"
+           }
+        ]
+    },
+    {
+        "startTime" : "12:00",
+        "endTime" : "12:30",
+        "agendaItems" : [
+           {
+              "title" : "JPMorgan Chase reaches goals with next-generation automation solutions",
+              "tags" : [ "ansible" ],
+              "room" : "room1"
+           },
+           {
+            "title" : "Partner Sponsor Track",
+            "tags" : [ "ai" ],
+            "room" : "room2"
+            
+           },
+           {
+            "title" : "Optimising AI workloads with Red Hat",
+            "tags" : [ "ai" ],
+            "room" : "room3"
+           },
+           {
+            "title" : "Event-Driven Automation - Filter the boredom",
+            "tags" : [ "ansible", "developer" ],
+            "room" : "room4"
+           }
+        ]
+    },
+    {
+        "startTime" : "13:20",
+        "endTime" : "13:50",
+        "agendaItems" : [
+           {
+              "title" : "How GoDaddy Leveraged the Red Hat x AWS Partnership to Migrate, Grow and Accelerate their K8's Adoption",
+              "tags" : [ "openshift" ],
+              "room" : "room1"
+           },
+           {
+            "title" : "Partner Guest Speaker",
+            "tags" : [ "openshift" ],
+            "room" : "room2"
+           },
+           {
+            "title" : "Image Mode for RHEL",
+            "tags" : [ "rhel" ],
+            "room" : "room3"
+           },
+           {
+            "title" : "Preparing for a cloud native future with OpenShift Virtualization",
+            "tags" : [ "openshift" ],
+            "room" : "room4"
+           }
+        ]
+    },
+    {
+        "startTime" : "13:55",
+        "endTime" : "14:25",
+        "agendaItems" : [
+           {
+              "title" : "Navigating the Automation Landscape: Aviva’s Journey with Ansible Automation Platform",
+              "tags" : [ "ansible" ],
+              "room" : "room1"
+           },
+           {
+            "title" : "Partner Guest Speaker",
+            "tags" : [ "openshift" ],
+            "room" : "room2"
+           },
+           {
+            "title" : "How Quarkus makes your apps cheaper, greener, and happier",
+            "tags" : [ "developer" ],
+            "room" : "room3"
+           },
+           {
+            "title" : "Its a a mystery [TODO]",
+            "tags" : [ "openshift" ],
+            "room" : "room4"
+           }
+        ]
+    },
+    {
+        "startTime" : "14:30",
+        "endTime" : "15:00",
+        "agendaItems" : [
+           {
+              "title" : "Bank in a box: High-performance trading systems with multisite self-healing using Red Hat OpenShift",
+              "tags" : [ "openshift" ],
+              "room" : "room1"
+           },
+           {
+            "title" : "Partner Guest Speaker",
+            "tags" : [ "openshift" ],
+            "room" : "room2"
+           },
+           {
+            "title" : "Red Hat Developer Hub - Backstage powered Development Portals, Compliant, Efficient and Secure",
+            "tags" : [ "developer" ],
+            "room" : "room3"
+           },
+           {
+            "title" : "Sustainability in the AI Era: IT ambidexterity in managing IT demand as well as IT efficiency",
+            "tags" : [ "rhel", "ai" ],
+            "room" : "room4"
+           }
+        ]
+    },
+    {
+        "startTime" : "15:25",
+        "endTime" : "15:55",
+        "agendaItems" : [
+           {
+              "title" : "Customer Session - National Energy System Operator: Driving success with DevSecOps on OpenShift",
+              "tags" : [ "openshift" ],
+              "room" : "room1"
+           },
+           {
+            "title" : "Partner Guest Speaker",
+            "tags" : [ "openshift" ],
+            "room" : "room2"
+           },
+           {
+            "title" : "Hackation (AI)",
+            "tags" : [ "developer", "ai" ],
+            "room" : "room3"
+           },
+           {
+            "title" : "Services",
+            "tags" : [ "rhel", "openshift" ],
+            "room" : "room4"
+           }
+        ]
+    },
+    {
+        "startTime" : "16:00",
+        "endTime" : "16:30",
+        "agendaItems" : [
+           {
+              "title" : "Customer Session - From On-Premise to Cloud: Navigating OpenShift Deployment Challenges",
+              "tags" : [ "openshift" ],
+              "room" : "room1"
+           },
+           {
+            "title" : "Partner Guest Speaker",
+            "tags" : [ "openshift" ],
+            "room" : "room2"
+           },
+           {
+            "title" : "Training",
+            "tags" : [ "developer", "ai" ],
+            "room" : "room3"
+           },
+           {
+            "title" : "Its a a mystery [TODO]",
+            "tags" : [ "rhel", "openshift" ],
+            "room" : "room4"
+           }
+        ]
+    }
+]

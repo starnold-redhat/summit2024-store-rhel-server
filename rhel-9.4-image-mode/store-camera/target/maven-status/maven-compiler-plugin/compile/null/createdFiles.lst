@@ -1,0 +1,9 @@
+redhat/summit2024/scheduler/StoreDisplayService.class
+redhat/summit2024/scheduler/StoreDisplay.class
+redhat/summit2024/scheduler/ImageDetection.class
+redhat/summit2024/scheduler/ImageDetectionService.class
+redhat/summit2024/scheduler/CameraManager.class
+redhat/summit2024/scheduler/ImageDetectionResponse.class
+redhat/summit2024/scheduler/Camera.class
+redhat/summit2024/scheduler/ImageFromCamera.class
+redhat/summit2024/StoreCameraResource.class

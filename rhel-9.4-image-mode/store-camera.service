@@ -1,0 +1,16 @@
+[Unit]
+Description=Store Camera service
+Requires=network.target 
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/store-camera/
+ExecStart=/usr/lib/jvm/java-21-openjdk-21.0.4.0.7-1.el9.x86_64/bin/java -jar /store-camera/quarkus-run.jar
+Environment="quarkus.rest-client.imagedetection-api.url=https://camel-edge-edge1.apps.cluster-ljhns.sandbox1964.opentlc.com"
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

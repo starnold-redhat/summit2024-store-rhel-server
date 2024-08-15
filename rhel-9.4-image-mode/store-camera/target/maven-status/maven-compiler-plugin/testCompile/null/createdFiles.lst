@@ -1,0 +1,4 @@
+org/acme/GreetingResourceIT.class
+org/acme/GreetingResourceTest.class
+org/acme/scheduler/CountResourceIT.class
+org/acme/scheduler/CountResourceTest.class
