@@ -1,18 +1,4 @@
-FROM registry.redhat.io/rhel9/rhel-bootc:9.4
-
-# COPY the auth.json to enable the image to authenticate with Quay
-COPY ./auth.json /etc/ostree/
-
-#add a user
-RUN useradd redhat -p redhat 
-RUN echo redhat | passwd redhat --stdin
-RUN usermod -aG wheel redhat 
-
-#install java and graphical UI 
-RUN yum group install -y GNOME base-x Fonts && dnf clean all
-RUN systemctl set-default graphical.target
-RUN yum install -y java-21-openjdk firefox && dnf clean all
-RUN yum install -y python39 && dnf clean all
+FROM  quay.io/redhat_emp1/uksummit-rhelbase
 
 # We make four distinct layers so if there are application changes the library layers can be re-used
 RUN mkdir -p /store-display /store-display/lib /store-display/app /store-display/quarkus 
