@@ -1,5 +1,5 @@
 # store-app
-Its awesome
+Its awesome,today
 
 
 ## Getting started
