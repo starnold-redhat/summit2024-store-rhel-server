@@ -40,11 +40,11 @@ public class AgendaManager {
     }
 
     public String getMessage(String tag) {
-        String message = "grab a t-shirt, and hold it up in front of the camera";
+        String message = "select a t-shirt, and hold it up in front of the camera";
         if (shouldSendCachedMessage(tag)){
           message = cachedMessage;
         } else if  ("unknown".equals(tag)) {
-          message = "grab a t-shirt, and hold it up in front of the camera";
+          message = "select a t-shirt, and hold it up in front of the camera";
         } else {
           // we need to check for whether the tag matches an agenda item
           boolean agendaFound = false;
