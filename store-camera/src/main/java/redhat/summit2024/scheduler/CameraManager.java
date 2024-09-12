@@ -19,7 +19,7 @@ public class CameraManager {
     @Inject
     StoreDisplay storeDisplay;
 
-    @Scheduled(every = "500s")
+    @Scheduled(every = "1s")
     void checkCameraImage() {
         String b64Image = camera.getImage();
 

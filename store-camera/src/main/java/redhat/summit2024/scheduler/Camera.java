@@ -20,7 +20,7 @@ import javax.imageio.ImageIO;
 @ApplicationScoped
 public class Camera {
 
-    private DisplayWindow window = new DisplayWindow();
+    
     private static final Logger LOG = Logger.getLogger(Camera.class);
     public String getImage() {
         // call web camera function
@@ -29,7 +29,7 @@ public class Camera {
         BufferedImage captured_image = webcam.getImage();
         String image = imgToBase64String(captured_image, "png");
         try {
-            File imageFile = new File("./src/main/resources/META-INF/resources/image.png");
+            File imageFile = new File("/var/store-camera/image.png");
             ImageIO.write(captured_image, "png", imageFile);
         }catch(Exception e){
             e.printStackTrace();
