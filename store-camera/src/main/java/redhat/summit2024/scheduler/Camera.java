@@ -29,7 +29,7 @@ public class Camera {
         BufferedImage captured_image = webcam.getImage();
         String image = imgToBase64String(captured_image, "png");
         try {
-            File imageFile = new File("/var/store-camera/image.png");
+            File imageFile = new File("/tmp/image.png");
             ImageIO.write(captured_image, "png", imageFile);
         }catch(Exception e){
             e.printStackTrace();
