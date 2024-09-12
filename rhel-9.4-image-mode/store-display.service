@@ -6,8 +6,8 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/store-display/
-ExecStart=/usr/lib/jvm/java-21-openjdk-21.0.4.0.7-1.el9.x86_64/bin/java -jar /store-display/quarkus-run.jar
+WorkingDirectory=/var/store-display/
+ExecStart=/usr/lib/jvm/java-21-openjdk-21.0.4.0.7-1.el9.x86_64/bin/java -jar /var/store-display/quarkus-run.jar
 Restart=on-failure
 RestartSec=10
 
