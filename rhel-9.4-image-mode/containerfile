@@ -1,4 +1,4 @@
-FROM  quay.io/redhat_emp1/uksummit-rhelbase
+FROM  quay.io/starnold/uksummit-rhelbase
 
 # We make four distinct layers so if there are application changes the library layers can be re-used
 RUN mkdir -p /var/store-display /var/store-display/lib /var/store-display/app /var/store-display/quarkus 
