@@ -6,9 +6,8 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/store-camera/
-ExecStart=/usr/lib/jvm/java-21-openjdk-21.0.4.0.7-1.el9.x86_64/bin/java -jar /store-camera/quarkus-run.jar
-Environment="quarkus.rest-client.imagedetection-api.url=https://camel-edge-edge1.apps.cluster-ljhns.sandbox1964.opentlc.com"
+WorkingDirectory=/var/store-camera/
+ExecStart=/usr/lib/jvm/java-21-openjdk-21.0.4.0.7-1.el9.x86_64/bin/java -jar /var/store-camera/quarkus-run.jar
 Restart=on-failure
 RestartSec=10
 
