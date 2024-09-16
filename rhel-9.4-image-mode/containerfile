@@ -1,19 +1,19 @@
 FROM  quay.io/starnold/uksummit-rhelbase
 
 # We make four distinct layers so if there are application changes the library layers can be re-used
-RUN mkdir -p /var/store-display /var/store-display/lib /var/store-display/app /var/store-display/quarkus 
-COPY ./store-display/target/quarkus-app/lib/ /var/store-display/lib/
-COPY ./store-display/target/quarkus-app/*.jar /var/store-display/
-COPY ./store-display/target/quarkus-app/app/ /var/store-display/app/
-COPY ./store-display/target/quarkus-app/quarkus/ /var/store-display/quarkus/
+RUN mkdir -p /store-display /store-display/lib /store-display/app /store-display/quarkus 
+COPY ./store-display/target/quarkus-app/lib/ /store-display/lib/
+COPY ./store-display/target/quarkus-app/*.jar /store-display/
+COPY ./store-display/target/quarkus-app/app/ /store-display/app/
+COPY ./store-display/target/quarkus-app/quarkus/ /store-display/quarkus/
 COPY ./store-display.service /etc/systemd/system
 
 # We make four distinct layers so if there are application changes the library layers can be re-used
-RUN mkdir -p /var/store-camera /var/store-camera/lib /var/store-camera/app /var/store-camera/quarkus 
-COPY ./store-camera/target/quarkus-app/lib/ /var/store-camera/lib/
-COPY ./store-camera/target/quarkus-app/*.jar /var/store-camera/
-COPY ./store-camera/target/quarkus-app/app/ /var/store-camera/app/
-COPY ./store-camera/target/quarkus-app/quarkus/ /var/store-camera/quarkus/
+RUN mkdir -p /store-camera /store-camera/lib /store-camera/app /store-camera/quarkus 
+COPY ./store-camera/target/quarkus-app/lib/ /store-camera/lib/
+COPY ./store-camera/target/quarkus-app/*.jar /store-camera/
+COPY ./store-camera/target/quarkus-app/app/ /store-camera/app/
+COPY ./store-camera/target/quarkus-app/quarkus/ /store-camera/quarkus/
 COPY ./store-camera.service /etc/systemd/system
 
 # Start the store display service
