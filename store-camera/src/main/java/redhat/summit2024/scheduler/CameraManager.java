@@ -4,6 +4,7 @@ package redhat.summit2024.scheduler;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import redhat.summit2024.websockets.DisplaySocket;
 import io.quarkus.scheduler.Scheduled;
 
 
@@ -19,9 +20,14 @@ public class CameraManager {
     @Inject
     StoreDisplay storeDisplay;
 
+    @Inject
+    DisplaySocket display;
+
     @Scheduled(every = "1s")
     void checkCameraImage() {
         String b64Image = camera.getImage();
+
+        display.onMessage(b64Image);
 
         String tag = imageDetection.checkImage(b64Image);
 
