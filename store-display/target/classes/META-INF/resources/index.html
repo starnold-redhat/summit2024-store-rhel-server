@@ -27,6 +27,12 @@
           <p></p><p></p>
           <text id="chat">choose a t-shirt, and hold it up in front of the camera</text>
       </div>
+      <div class="row" id="nextevent" style="display: none;">
+        <p></p>
+        <text id="nexteventmessage"></text>
+        <img id="qrcode"></img>
+      </div>  
+    </div>
       
     </div>
 
@@ -53,6 +59,15 @@
               socket.onmessage =function(m) {
                   console.log("Got message: " + m.data);
                   document.getElementById("chat").innerHTML = m.data;
+
+                  if (m.data.includes('ansible') ){
+                     document.getElementById('nextevent').style.display = '';
+                     document.getElementById("nexteventmessage").innerHTML = "Your next ansible event:";
+                     document.getElementById("qrcode").src = "ansible.jpg";
+                  }
+                  else {
+                    document.getElementById('nextevent').style.display = 'none';
+                  }
               };
           }
       };

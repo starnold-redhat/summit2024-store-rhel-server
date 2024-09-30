@@ -1,22 +1,44 @@
 [
     {
-        "startTime" : "09:20",
-        "endTime" : "10:10",
+        "startTime" : "09:30",
+        "endTime" : "10:15",
         "agendaItems" : [
            {
-              "title" : "Red Hat Technology Keynote",
+              "title" : "Red Hat Vision for AI and Open Source",
               "tags" : [ "ansible", "openshift", "rhel", "ai" ],
               "room" : "Theatre"
            }
         ]
     },
     {
-      "startTime" : "10:10",
-      "endTime" : "10:25",
+      "startTime" : "10:15",
+      "endTime" : "10:30",
       "agendaItems" : [
          {
             "title" : "Implementing a Trusted Software Supply Chain within DNEG's OpenShift CI/CD Pipelines",
             "tags" : [  "openshift"],
+            "room" : "Theatre"
+         }
+      ]
+    },
+    {
+      "startTime" : "10:30",
+      "endTime" : "10:40",
+      "agendaItems" : [
+         {
+            "title" : "Accelerate your Enterprise AI journey with OpenShift AI & Intel technology",
+            "tags" : [  "openshift", "ai", "partner"],
+            "room" : "Theatre"
+         }
+      ]
+    },
+    {
+      "startTime" : "10:40",
+      "endTime" : "10:50",
+      "agendaItems" : [
+         {
+            "title" : "Boston Cildrens Hosptial",
+            "tags" : [  "openshift", "ai"],
             "room" : "Theatre"
          }
       ]
@@ -32,7 +54,7 @@
            },
            {
             "title" : "Enhancing Enterprise AI with RAG: Boost your AI's intelligence by seamlessly merging real-time data with LLMs",
-            "tags" : [ "ai" ],
+            "tags" : [ "ai", "partner" ],
             "room" : "room2"
            },
            {
@@ -41,8 +63,8 @@
             "room" : "room3"
            },
            {
-            "title" : "Should you invest in platform teams? How OpenShift Cloud Services can save time cost and effort in your operations.",
-            "tags" : [ "openshift" ],
+            "title" : "Team Topologies",
+            "tags" : [ "partner" , "openshift"],
             "room" : "room4"
            }
         ]
@@ -58,7 +80,7 @@
            },
            {
             "title" : "Partner Sponsor Track",
-            "tags" : [ "ai" ],
+            "tags" : [ "ai" , "partner" ],
             "room" : "room2"
             
            },
@@ -79,13 +101,13 @@
         "endTime" : "13:50",
         "agendaItems" : [
            {
-              "title" : "How GoDaddy Leveraged the Red Hat x AWS Partnership to Migrate, Grow and Accelerate their K8's Adoption",
+              "title" : "Worldpay's Platform as a Product",
               "tags" : [ "openshift" ],
               "room" : "room1"
            },
            {
-            "title" : "Partner Guest Speaker",
-            "tags" : [ "openshift" ],
+            "title" : "Partner Guest Speaker with AWS",
+            "tags" : [ "partner" ],
             "room" : "room2"
            },
            {
@@ -105,13 +127,13 @@
         "endTime" : "14:25",
         "agendaItems" : [
            {
-              "title" : "Navigating the Automation Landscape: Aviva’s Journey with Ansible Automation Platform",
-              "tags" : [ "ansible" ],
+              "title" : "National Energy System Operator: Driving success with DevSecOps on OpenShift",
+              "tags" : [ "openshift" ],
               "room" : "room1"
            },
            {
-            "title" : "Partner Guest Speaker",
-            "tags" : [ "openshift" ],
+            "title" : "Partner Guest Speaker with Microsoft",
+            "tags" : [ "partner" ],
             "room" : "room2"
            },
            {
@@ -120,8 +142,8 @@
             "room" : "room3"
            },
            {
-            "title" : "Its a a mystery [TODO]",
-            "tags" : [ "openshift" ],
+            "title" : "How ROSA enables MarketAxess to deliver our first AI driven product SensAI",
+            "tags" : [ "openshift", "ai" ],
             "room" : "room4"
            }
         ]
@@ -142,12 +164,12 @@
            },
            {
             "title" : "Red Hat Developer Hub - Backstage powered Development Portals, Compliant, Efficient and Secure",
-            "tags" : [ "developer" ],
+            "tags" : [ "developer", "openshift" ],
             "room" : "room3"
            },
            {
             "title" : "Sustainability in the AI Era: IT ambidexterity in managing IT demand as well as IT efficiency",
-            "tags" : [ "rhel", "ai" ],
+            "tags" : [ "rhel", "ai", "openshift" ],
             "room" : "room4"
            }
         ]
@@ -157,23 +179,23 @@
         "endTime" : "15:55",
         "agendaItems" : [
            {
-              "title" : "Customer Session - National Energy System Operator: Driving success with DevSecOps on OpenShift",
-              "tags" : [ "openshift" ],
+              "title" : "Navigating the Automation Landscape: Aviva’s Journey with Ansible Automation Platform",
+              "tags" : [ "ansible" ],
               "room" : "room1"
            },
            {
             "title" : "Partner Guest Speaker",
-            "tags" : [ "openshift" ],
+            "tags" : [ "partner" ],
             "room" : "room2"
            },
            {
-            "title" : "Hackation (AI)",
-            "tags" : [ "developer", "ai" ],
+            "title" : "Blocks Framework: An automated framework for developing, building and deploying Tekton tasks and patterns",
+            "tags" : [ "developer", "openshift" ],
             "room" : "room3"
            },
            {
-            "title" : "Services",
-            "tags" : [ "rhel", "openshift" ],
+            "title" : "ServicesShould you invest in platform operations? How OpenShift Cloud Services can save time cost and effort",
+            "tags" : [ "openshift" ],
             "room" : "room4"
            }
         ]
@@ -183,23 +205,23 @@
         "endTime" : "16:30",
         "agendaItems" : [
            {
-              "title" : "Customer Session - From On-Premise to Cloud: Navigating OpenShift Deployment Challenges",
+              "title" : "From On-Premise to Cloud: Navigating OpenShift Deployment Challenges",
               "tags" : [ "openshift" ],
               "room" : "room1"
            },
            {
-            "title" : "Partner Guest Speaker",
-            "tags" : [ "openshift" ],
+            "title" : "Enterprise Ready AI - Powered by Dell Technologies and Red Hat",
+            "tags" : [ "ai", "partner" ],
             "room" : "room2"
            },
            {
-            "title" : "Training",
-            "tags" : [ "developer", "ai" ],
+            "title" : "Ansible Automation Platform Roadmap - headlights on what’s coming",
+            "tags" : [ "ansible" ],
             "room" : "room3"
            },
            {
-            "title" : "Its a a mystery [TODO]",
-            "tags" : [ "rhel", "openshift" ],
+            "title" : "Panel with Steve & Joe F",
+            "tags" : [  "openshift" ],
             "room" : "room4"
            }
         ]
