@@ -1,5 +1,5 @@
-/Users/starnold/code/summit2024/store-app/store-display/src/main/java/redhat/summit2024/websockets/DisplaySocket.java
-/Users/starnold/code/summit2024/store-app/store-display/src/main/java/redhat/summit2024/agenda/AgendaSlot.java
-/Users/starnold/code/summit2024/store-app/store-display/src/main/java/redhat/summit2024/agenda/AgendaManager.java
-/Users/starnold/code/summit2024/store-app/store-display/src/main/java/redhat/summit2024/rest/IdentificationEndpoint.java
-/Users/starnold/code/summit2024/store-app/store-display/src/main/java/redhat/summit2024/agenda/AgendaItem.java
+/home/user1/code/summit2024-store-rhel-server/store-display/src/main/java/redhat/summit2024/websockets/DisplaySocket.java
+/home/user1/code/summit2024-store-rhel-server/store-display/src/main/java/redhat/summit2024/agenda/AgendaSlot.java
+/home/user1/code/summit2024-store-rhel-server/store-display/src/main/java/redhat/summit2024/rest/IdentificationEndpoint.java
+/home/user1/code/summit2024-store-rhel-server/store-display/src/main/java/redhat/summit2024/agenda/AgendaManager.java
+/home/user1/code/summit2024-store-rhel-server/store-display/src/main/java/redhat/summit2024/agenda/AgendaItem.java

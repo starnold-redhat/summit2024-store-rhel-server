@@ -58,7 +58,11 @@ public class AgendaManager {
               }
           }
           if (!agendaFound){
-            message = "Sorry, there are no more sessions for " + tag + ".  See you at the final session at 4.30";
+            if ("summitconnect".equals(tag)){
+              message = "Wow - thats a summit connect T-shirt.  It worked, and you're all awesome!!!";
+            } else {
+              message = "Sorry, there are no more sessions for " + tag + ".  See you at the final session at 4.30";
+            }
           }
           //because we've successfully spotted a tshirt - then cache the message
           cachedMessage = message;

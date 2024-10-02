@@ -48,7 +48,7 @@ public class AgendaItem {
     public String getMessage(String tag,  String startTime) {
         String message = null;
         if (matches(tag)){
-            message = "Your next " + tag + " session is '" + title + "' in room " + room + " at " + startTime + ".  Have a great session!";
+            message = "Your next " + tag + " session is '" + title + "' in " + room + " at " + startTime + ".  Have a great session!";
         }
 
         return message;
