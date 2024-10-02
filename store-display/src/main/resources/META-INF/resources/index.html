@@ -13,11 +13,18 @@
             color: white;
             font-size: 60px;
             text-align: center;
+            white-space: pre-wrap;
         }
         #nexteventmessage {
             color: white;
             font-size: 60px;
             text-align: center;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
         }
         
         
@@ -34,9 +41,9 @@
           <text id="chat">choose a t-shirt, and hold it up in front of the camera</text>
       </div>
       <div class="row" id="nextevent" style="display: none;">
-        <p></p>
+        <p></p><p></p>
         <text id="nexteventmessage">Your next event:</text>
-        <img id="qrcode"></img>
+        <img id="qrcode" class="center"></img>
       </div>  
     </div>
       
