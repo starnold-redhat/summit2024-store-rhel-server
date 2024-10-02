@@ -5,7 +5,7 @@
         "agendaItems" : [
            {
               "title" : "Red Hat Vision for AI and Open Source",
-              "tags" : [ "ansible", "openshift", "rhel", "ai" ],
+              "tags" : [ "ansible", "openshift", "rhel", "ai", "kubernetes" ],
               "room" : "the Main Theatre"
            }
         ]
@@ -16,7 +16,7 @@
       "agendaItems" : [
          {
             "title" : "Implementing a Trusted Software Supply Chain within DNEG's OpenShift CI/CD Pipelines",
-            "tags" : [  "openshift"],
+            "tags" : [  "openshift", "kubernetes"],
             "room" : "the Main Theatre"
          }
       ]
@@ -27,7 +27,7 @@
       "agendaItems" : [
          {
             "title" : "Accelerate your Enterprise AI journey with OpenShift AI & Intel technology",
-            "tags" : [  "openshift", "ai", "partner"],
+            "tags" : [  "openshift", "ai", "partners"],
             "room" : "the Main Theatre"
          }
       ]
@@ -38,7 +38,7 @@
       "agendaItems" : [
          {
             "title" : "Boston Cildrens Hosptial",
-            "tags" : [  "openshift", "ai"],
+            "tags" : [  "openshift", "ai", "kubernetes"],
             "room" : "the Main Theatre"
          }
       ]
@@ -54,7 +54,7 @@
            },
            {
             "title" : "Enhancing Enterprise AI with RAG: Boost your AI's intelligence by seamlessly merging real-time data with LLMs",
-            "tags" : [ "ai", "partner" ],
+            "tags" : [ "ai", "partners" ],
             "room" : "Aldgate"
            },
            {
@@ -64,7 +64,7 @@
            },
            {
             "title" : "Team Topologies",
-            "tags" : [ "partner" , "openshift"],
+            "tags" : [ "partners" , "openshift"],
             "room" : "Dowgate"
            }
         ]
@@ -80,7 +80,7 @@
            },
            {
             "title" : "How Kyndryl leverages Red Hat Ansible for business outcomes",
-            "tags" : [ "ansible" , "partner" ],
+            "tags" : [ "ansible" , "partners" ],
             "room" : "Aldgate"
             
            },
@@ -107,7 +107,7 @@
            },
            {
             "title" : "Partner Guest Speaker with AWS",
-            "tags" : [ "partner" ],
+            "tags" : [ "partners" ],
             "room" : "Aldgate"
            },
            {
@@ -117,7 +117,7 @@
            },
            {
             "title" : "Preparing for a cloud native future with OpenShift Virtualization",
-            "tags" : [ "openshift" ],
+            "tags" : [ "openshift", "kubernetes" ],
             "room" : "Dowgate"
            }
         ]
@@ -133,7 +133,7 @@
            },
            {
             "title" : "Innovate with Azure Red Hat OpenShift to Build Intelligent Applications",
-            "tags" : [ "partners", "ai" ],
+            "tags" : [ "partners", "ai" , "kubernetes"],
             "room" : "Aldgate"
            },
            {
@@ -159,7 +159,7 @@
            },
            {
             "title" : "Nutanix & Red Hat: The Power to Simplify (Modern Infrastructure for Modern Apps)",
-            "tags" : [ "openshift" ],
+            "tags" : [ "openshift", "partners" ],
             "room" : "Aldgate"
            },
            {
@@ -169,7 +169,7 @@
            },
            {
             "title" : "Preparing for a cloud native future with OpenShift Virtualization",
-            "tags" : [ "rhel", "openshift" ],
+            "tags" : [ "rhel", "openshift", "kubernetes" ],
             "room" : "Dowgate"
            }
         ]
@@ -185,7 +185,7 @@
            },
            {
             "title" : "AI in a box",
-            "tags" : [ "partner", "ai" ],
+            "tags" : [ "partners", "ai" ],
             "room" : "Aldgate"
            },
            {
@@ -195,7 +195,7 @@
            },
            {
             "title" : "Should you invest in platform operations? How OpenShift Cloud Services can save time cost and effort",
-            "tags" : [ "openshift" ],
+            "tags" : [ "openshift" , "kubernetes"],
             "room" : "Dowgate"
            }
         ]
@@ -211,7 +211,7 @@
            },
            {
             "title" : "Enterprise Ready AI - Powered by Dell Technologies and Red Hat",
-            "tags" : [ "ai", "partner" ],
+            "tags" : [ "ai", "partners" ],
             "room" : "Aldgate"
            },
            {
@@ -221,7 +221,7 @@
            },
            {
             "title" : "AI Panel Discussion: Red Hat's view on AI in a Hybrid Cloud world",
-            "tags" : [  "openshift" ],
+            "tags" : [  "ai" , "kubernetes"],
             "room" : "Dowgate"
            }
         ]

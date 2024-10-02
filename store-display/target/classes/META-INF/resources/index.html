@@ -69,7 +69,15 @@
                   if (m.data.includes('ansible') ){
                      document.getElementById('nextevent').style.display = '';
                      document.getElementById("nexteventmessage").innerHTML = "Your next ansible event:";
-                     document.getElementById("qrcode").src = "ansible.jpg";
+                     document.getElementById("qrcode").src = "ansible.png";
+                  } else if (m.data.includes('openshift') ){
+                     document.getElementById('nextevent').style.display = '';
+                     document.getElementById("nexteventmessage").innerHTML = "Your next openshift event:";
+                     document.getElementById("qrcode").src = "virt.png";
+                  } else if (m.data.includes('kubernetes') ){
+                     document.getElementById('nextevent').style.display = '';
+                     document.getElementById("nexteventmessage").innerHTML = "Your next rosa event:";
+                     document.getElementById("qrcode").src = "rosa.png";
                   }
                   else {
                     document.getElementById('nextevent').style.display = 'none';
