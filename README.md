@@ -1,6 +1,6 @@
 # store-app
 Its awesome,today
-Fab
+Fabs
 
 ## Getting started
 
