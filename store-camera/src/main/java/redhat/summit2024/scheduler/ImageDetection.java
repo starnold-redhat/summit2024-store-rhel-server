@@ -23,7 +23,17 @@ public class ImageDetection {
             System.out.println(response.getItem());
 
             if(response.getKnown().equals("true")){
-                detectedTshirt = response.getItem();
+                String itemcode = response.getItem();
+                if ("rhel".equals(itemcode) ||
+                    "ansible".equals(itemcode) ||
+                    "partners".equals(itemcode) ||
+                    "openshift".equals(itemcode) ||
+                    "ai".equals(itemcode) ||
+                    "kubernetes".equals(itemcode) ||
+                    "rhel".equals(itemcode)){
+
+                        detectedTshirt = response.getItem();
+                    }
             }
 
         } catch (Exception e){
