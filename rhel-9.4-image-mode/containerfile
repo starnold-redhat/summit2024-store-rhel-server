@@ -6,6 +6,8 @@ COPY ./store-display/target/quarkus-app/lib/ /store-display/lib/
 COPY ./store-display/target/quarkus-app/*.jar /store-display/
 COPY ./store-display/target/quarkus-app/app/ /store-display/app/
 COPY ./store-display/target/quarkus-app/quarkus/ /store-display/quarkus/
+COPY ./store-display/agenda.json /store-display/
+
 COPY ./store-display.service /etc/systemd/system
 
 # We make four distinct layers so if there are application changes the library layers can be re-used
