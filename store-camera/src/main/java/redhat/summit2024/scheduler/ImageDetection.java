@@ -20,23 +20,10 @@ public class ImageDetection {
             cameraImage.setImage(image);
             ImageDetectionResponse response = imageDetectionService.detectKnownTShirt(cameraImage);
             System.out.println(response.getKnown());
-            System.out.println(response.getProducts());
-            System.out.println(response.getPricetag());
+            System.out.println(response.getItem());
 
             if(response.getKnown().equals("true")){
-                if(response.getPricetag().contains("RHEL")) {
-                    detectedTshirt = "rhel";
-                }else if(response.getPricetag().contains("Openshift")){
-                    detectedTshirt = "openshift";
-                }else if(response.getPricetag().contains("Ansible")){
-                    detectedTshirt = "ansible";
-                }else if(response.getPricetag().contains("Developer")){
-                    detectedTshirt = "developer";
-                }else if(response.getPricetag().contains("AI")){
-                    detectedTshirt = "ai";
-                }else{
-                    detectedTshirt  = "unknown";
-                }
+                detectedTshirt = response.getItem();
             }
 
         } catch (Exception e){

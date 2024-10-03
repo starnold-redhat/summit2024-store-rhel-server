@@ -19,6 +19,7 @@ public class IdentificationEndpoint {
     @GET
     public String identifiedTShirt(String tag) {
         
+        System.out.println("identified " + tag);
         String message = agendaManager.getMessage(tag);
        
         display.onMessage(message);
