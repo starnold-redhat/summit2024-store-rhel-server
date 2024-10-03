@@ -31,6 +31,7 @@ public class ImageDetection {
                     "ai".equals(itemcode) ||
                     "kubernetes".equals(itemcode) ||
                     "rhel".equals(itemcode) ||
+                    "developer".equals(itemcode) ||
                     "summitconnect".equals(itemcode)){
 
                         detectedTshirt = response.getItem();
