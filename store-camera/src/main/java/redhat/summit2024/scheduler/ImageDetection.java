@@ -30,7 +30,8 @@ public class ImageDetection {
                     "openshift".equals(itemcode) ||
                     "ai".equals(itemcode) ||
                     "kubernetes".equals(itemcode) ||
-                    "rhel".equals(itemcode)){
+                    "rhel".equals(itemcode) ||
+                    "summitconnect".equals(itemcode)){
 
                         detectedTshirt = response.getItem();
                     }
