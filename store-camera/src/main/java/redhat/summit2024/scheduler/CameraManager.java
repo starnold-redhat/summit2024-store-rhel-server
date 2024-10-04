@@ -27,11 +27,16 @@ public class CameraManager {
     void checkCameraImage() {
         String b64Image = camera.getImage();
 
-        display.onMessage(b64Image);
+        if (b64Image !=null){
 
-        String tag = imageDetection.checkImage(b64Image);
-
-        storeDisplay.displayMessageForImage(tag);
+            display.onMessage(b64Image);
+    
+            String tag = imageDetection.checkImage(b64Image);
+    
+            storeDisplay.displayMessageForImage(tag);
+        } else {
+            System.out.println("Encoded image is null");
+        }
         
     }
 }

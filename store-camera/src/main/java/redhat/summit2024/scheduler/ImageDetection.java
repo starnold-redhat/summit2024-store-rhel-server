@@ -19,8 +19,7 @@ public class ImageDetection {
             ImageFromCamera cameraImage = new ImageFromCamera();
             cameraImage.setImage(image);
             ImageDetectionResponse response = imageDetectionService.detectKnownTShirt(cameraImage);
-            System.out.println(response.getKnown());
-            System.out.println(response.getItem());
+            System.out.println("Known:" + response.getKnown() + ",Item:" + response.getItem());
 
             if(response.getKnown().equals("true")){
                 String itemcode = response.getItem();
@@ -40,7 +39,7 @@ public class ImageDetection {
 
         } catch (Exception e){
             // don't really care - probaly just means the services isnt running yet
-            e.printStackTrace();
+            System.out.println("Error calling the image detection service in the cluster");
         }
         return detectedTshirt;
     }

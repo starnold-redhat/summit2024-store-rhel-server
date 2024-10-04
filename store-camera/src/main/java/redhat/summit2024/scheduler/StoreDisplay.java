@@ -16,7 +16,7 @@ public class StoreDisplay {
         try{
             storeDisplayService.getByTag(tag);
         } catch (Exception e){
-            e.printStackTrace();
+            System.out.println("Display service is not responding - is it running ?");
         }
     }
     

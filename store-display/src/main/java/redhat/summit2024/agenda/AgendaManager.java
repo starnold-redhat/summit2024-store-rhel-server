@@ -32,10 +32,10 @@ public class AgendaManager {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
           File agendaFile = new File("agenda.json");
+          
           agenda = objectMapper.readValue(agendaFile, new TypeReference<List<AgendaSlot>>(){});
         } catch (Exception e) {
-          LOG.error(e.getMessage());
-          e.printStackTrace();
+          LOG.error("Problems reading agenda file");
         }
     }
 

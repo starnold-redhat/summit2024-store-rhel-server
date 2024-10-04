@@ -54,5 +54,18 @@ public class AgendaItem {
         return message;
     }
 
+    String prettifyTag(String tag){
+       String prettyTag = tag;
+       if ("rhel".equals(tag)){
+         prettyTag = "RHEL";
+       } else if ("ai".equals(tag)){
+         prettyTag="AI";
+       }
+       else{
+         prettyTag = tag.substring(0,1).toUpperCase() + tag.substring(1).toLowerCase();
+       }
+       return prettyTag;
+    }
+
 
 }

@@ -14,7 +14,6 @@ import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
-import java.io.UncheckedIOException;
 import javax.imageio.ImageIO;
 
 @ApplicationScoped
@@ -24,15 +23,15 @@ public class Camera {
     private static final Logger LOG = Logger.getLogger(Camera.class);
     public String getImage() {
         // call web camera function
-        Webcam webcam = Webcam.getDefault();
-        webcam.open();
-        BufferedImage captured_image = webcam.getImage();
-        String image = imgToBase64String(captured_image, "png");
+        String image = null;
         try {
-            File imageFile = new File("/tmp/image.png");
-            ImageIO.write(captured_image, "png", imageFile);
+            Webcam webcam = Webcam.getDefault();
+            webcam.open();
+            BufferedImage captured_image = webcam.getImage();
+            image = imgToBase64String(captured_image, "png");
+            
         }catch(Exception e){
-            e.printStackTrace();
+            System.out.println("Unable to take a picture - camera probably not connected");
         }
         //encode the ensuing file
         //return the string
@@ -45,8 +44,7 @@ public class Camera {
             byte[] fileContent = FileUtils.readFileToByteArray(imageFile);
             image = Base64.getEncoder().encodeToString(fileContent);
         } catch (IOException e) {
-            LOG.error(e.getMessage());
-            e.printStackTrace();
+            System.out.println("Error encoding the image from a file");
         }
         return image;
     }
@@ -56,7 +54,7 @@ public class Camera {
         try (final OutputStream b64os = Base64.getEncoder().wrap(os)) {
             ImageIO.write(img, formatName, b64os);
         } catch (final IOException ioe) {
-            throw new UncheckedIOException(ioe);
+           System.out.println("Error in imgToBase64String encoding image");;
         }
         return os.toString();
     }

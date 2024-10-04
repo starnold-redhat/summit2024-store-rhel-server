@@ -50,7 +50,7 @@ public class DisplaySocket {
 
             displaySession.getAsyncRemote().sendObject(message, result -> {
                 if (result.getException() != null) {
-                    System.out.println("Unable to send message: " + result.getException());
+                    System.out.println("Unable to send message: " + result.getException().getMessage());
                 }
             });
             
