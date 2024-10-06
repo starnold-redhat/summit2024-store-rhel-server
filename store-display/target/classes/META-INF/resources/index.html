@@ -104,7 +104,7 @@
 
 
         if (! connected) {
-            socket = new WebSocket("ws://localhost:8080");
+            socket = new WebSocket("ws://" + location.host + "/chat/display");
             socket.onopen = function() {
                 connected = true;
                 console.log("Connected to the web socket");
