@@ -86,8 +86,9 @@ public class AgendaManager {
         prettyTag = "RHEL";
       } else if ("ai".equals(tag)){
         prettyTag="AI";
-      }
-      else{
+      } else if ("openshift".equals(tag)){
+        prettyTag="OpenShift";
+      } else{
         prettyTag = tag.substring(0,1).toUpperCase() + tag.substring(1).toLowerCase();
       }
       return prettyTag;
