@@ -48,24 +48,13 @@ public class AgendaItem {
     public String getMessage(String tag,  String startTime) {
         String message = null;
         if (matches(tag)){
-            message = "We love " + tag + " too! \nYour next " + tag + " session is: \n'" + title + "' in " + room + " at " + startTime + ".  \nHave a great session!";
+            message = title + "' in " + room + " at " + startTime + ".  \nHave a great session!";
         }
 
         return message;
     }
 
-    String prettifyTag(String tag){
-       String prettyTag = tag;
-       if ("rhel".equals(tag)){
-         prettyTag = "RHEL";
-       } else if ("ai".equals(tag)){
-         prettyTag="AI";
-       }
-       else{
-         prettyTag = tag.substring(0,1).toUpperCase() + tag.substring(1).toLowerCase();
-       }
-       return prettyTag;
-    }
+    
 
 
 }

@@ -59,11 +59,12 @@ public class AgendaManager {
           }
           if (!agendaFound){
             if ("summitconnect".equals(tag)){
-              message = "Wow - thats a summit connect T-shirt.  It worked, and you're all awesome!!!";
+              message = "Hope you enjoyed the demo";
             } else {
               message = "Sorry, there are no more sessions for " + tag + ".  See you at the final session at 4.30";
             }
           }
+          message=prettifyTag(tag)+"$"+message;
           //because we've successfully spotted a tshirt - then cache the message
           cachedMessage = message;
           displayTimeout = LocalTime.now().plusSeconds(secondsForDisplayToTimeout);
@@ -78,6 +79,19 @@ public class AgendaManager {
       }
       return shouldSendCachedMessage;
     }
+
+    String prettifyTag(String tag){
+      String prettyTag = tag;
+      if ("rhel".equals(tag)){
+        prettyTag = "RHEL";
+      } else if ("ai".equals(tag)){
+        prettyTag="AI";
+      }
+      else{
+        prettyTag = tag.substring(0,1).toUpperCase() + tag.substring(1).toLowerCase();
+      }
+      return prettyTag;
+   }
 }
 
     
