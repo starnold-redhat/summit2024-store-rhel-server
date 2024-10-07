@@ -16,7 +16,7 @@
         background-color: rgb(0, 0, 0);
     }
     .displaycolumn {
-        min-width: 1000px;
+        min-width: 800px;
     }
     .topmsg {
 	    background-color: white;
@@ -70,7 +70,7 @@
 
         <div class="row" id="nextevent" style="display: none;">
             <div class="col"></div>
-            <div class="col">
+            <div class="col displaycolumn">
                 <text class="message" id="nexteventmessage"></text>
                 <img id="qrcode" src="ansible.png" style="height="100px"/>                    
             </div>
@@ -95,7 +95,7 @@
         const headermessage = new Map();
         headermessage.set('Ansible', 'We love Ansible too!<br>Your next Ansible session');
         headermessage.set('OpenShift', 'Great choice, OpenShift Rocks!<br>Your next OpenShift session');
-        headermessage.set('RHEL','Ah Linux, the original and best Tee!<br>Your next RHEL session');
+        headermessage.set('RHEL','Linux the original and best Tee!<br>Your next RHEL session');
         headermessage.set('AI','Smart t-shirt, OpenShift AI!<br>Your next AI session');
         headermessage.set('Developers', 'We love a developer Tee!<br>Your next AppDev session');
         headermessage.set('Partners', 'That is our partners T-Shirt<br>Your next Partner session');
