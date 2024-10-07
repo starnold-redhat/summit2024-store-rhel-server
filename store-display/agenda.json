@@ -63,8 +63,8 @@
             "room" : "Cripplegate"
            },
            {
-            "title" : "Team Topologies",
-            "tags" : [ "partners" , "openshift"],
+            "title" : "Cold Start, fast flow - using external suppliers to bootstrap a nimble, flow centric organization",
+            "tags" : [ "partners" , "kubernetes"],
             "room" : "Dowgate"
            }
         ]
@@ -116,8 +116,8 @@
             "room" : "Cripplegate"
            },
            {
-            "title" : "Preparing for a cloud native future with OpenShift Virtualization",
-            "tags" : [ "openshift", "kubernetes" ],
+            "title" : "Sustainability in the AI era: IT ambidexterity in managing IT demand as well as efficiency",
+            "tags" : [ "rhel", "ai" ],
             "room" : "Dowgate"
            }
         ]
@@ -189,8 +189,8 @@
             "room" : "Aldgate"
            },
            {
-            "title" : "Deploying critical banking workloads in a zero trust environment",
-            "tags" : [ "developer", "openshift" ],
+            "title" : "ROSA and ARO in 2024: the art of the posible",
+            "tags" : [ "kubernetes", "openshift" ],
             "room" : "Cripplegate"
            },
            {
@@ -210,7 +210,7 @@
               "room" : "the Main Theatre"
            },
            {
-            "title" : "Enterprise Ready AI - Powered by Dell Technologies and Red Hat",
+            "title" : "Red Hat and Dell Technologies, accelerating ideas to innovation",
             "tags" : [ "ai", "partners" ],
             "room" : "Aldgate"
            },
